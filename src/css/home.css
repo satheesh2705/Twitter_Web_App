@@ -1,0 +1,378 @@
+
+.Home{
+    display:flex ;
+    flex-direction: column;
+    width: 43vw;
+    background-color:rgb(0, 0, 0);
+    border-right: 0.8px white solid;
+    color: white;
+}
+
+.Home .nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.navHead {     
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    list-style-type: none;
+    text-transform: capitalize;    
+}
+
+
+.navHead p{     
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    list-style-type: none;
+    text-transform: capitalize;    
+}
+
+.navIcon p{
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    list-style-type: none;
+    text-transform: capitalize;  
+}
+
+.Home .navHead p:hover{
+    height: 100%;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(160, 154, 154,0.2); */
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navIcon:hover{
+    height: 100%;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(160, 154, 154,0.3); */
+}
+
+
+/*---------------- post------------ */
+.Posts{
+    height: 94vh;
+    overflow-x: hidden;
+}
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+
+.Posts::-webkit-scrollbar {
+    height: 10px;
+    width: 6px;
+  }
+  /* .Posts::-webkit-scrollbar-track {
+     background-color: #ebdfdf; 
+    border-radius: 3px;
+  }
+  
+  .Posts::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  .Posts::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+   */
+  .Posts::-webkit-scrollbar-thumb { 
+    border-radius: 5px;
+    background-color: #0c5c8a;
+  }
+  
+  .Posts::-webkit-scrollbar-thumb:hover {
+    background-color: #116cd4;
+  }
+  
+  .Posts::-webkit-scrollbar-thumb:active {
+    background-color: #85e762;
+  }
+  
+.Post{
+    color: white;
+    display: flex;
+    flex-direction: column;   
+    border-top: 0.5px white solid;
+    border-bottom: 0.5px white solid;
+}
+
+.PostHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 7%;
+    /* position: fixed; */
+}
+
+.PostHeader-Sec1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+}
+
+.PostHeader-Sec1 img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 15px;    
+}
+.postdet{
+    display: flex;
+    flex-direction: column;
+   
+}
+.postName{
+    display: flex;
+}
+.postName p{
+    padding: 0% 10px;
+    font-weight: 700;
+}
+
+.postName p:nth-child(2){
+    font-weight: 300;
+}
+
+.postTime p:hover,.postName p:hover{
+    text-decoration: underline;
+}
+
+.postTime p{
+    margin: -15px 10px 10px 10px;  
+    font-weight: 300; 
+    font-size: 15px;
+}   
+
+.aboutpost{
+    margin: 0%;
+    padding: 0;
+    
+}
+.aboutpost p{
+    margin: -2% 0 1px 10px ;
+    padding: 5px 70px;
+    max-width: 500px;
+}
+.PostHeader-Sec2{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.PostHeader-Sec2:hover{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 148, 199,0.8);
+    color: aqua;
+    border-radius: 50px;
+    transition: 1s;
+}
+.PostBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PostBody img{
+    height: 300px;
+    width: 380px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 0.3px white solid;
+}
+
+.PostFooter{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.PostFooter span{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.buttons{
+    cursor: pointer;
+}
+
+.buttons:hover,
+.buttons:link
+{
+  color: blue;
+}
+
+.PostFooter span p{
+    padding: 0% 5px;
+}
+
+/* 
+===============================
+            profile-
+===============================
+*/
+
+.Profile{
+    background-color: black;
+    color: white;
+}
+
+.ProfileHeader-top{
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+
+.ProfileHeader-Name{
+    display: flex;
+    flex-direction: column;
+    margin: 6px 5px;   
+}
+#back{
+    font-size: 2em;
+}
+.ProfileHeader-Name div{
+    display: flex;
+
+}
+.ProfileHeader-Name div p{
+    padding: 0% 5px;
+    margin: 0%;
+    font-size: 13px;
+    font-weight: 300;
+}
+.ProfileHeader-Name h3{
+    padding: 0% 5px;
+    margin: 0%;
+}
+
+.ProfileBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 5%;
+    background-color: grey;
+    
+}
+
+.ProfileBox img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px black solid;
+    position: absolute;
+    top: 33%;
+   
+}
+
+.ProfileBox div {
+    position: absolute;
+    top: 37%;
+    left: 63%;   
+    background-color: black;
+    border-radius: 40px;
+    height: 35px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px white solid;
+}
+
+.ProfileBox div p{
+    text-align: center;
+    font-size: 15px;
+   
+}
+
+.ProfileBox div p:hover{
+    font-weight: 700;
+    
+}
+.ProfileDetails{
+    width: 80%;
+    margin: 6% 0 0 5%;
+}
+
+.ProfileDetails h2{
+    margin: 0%;
+    padding: 0;
+}
+#id{
+    margin: 0%;
+    padding: 2px 0;
+    font-size: 14px;
+    font-weight: 240;
+}
+
+#bio{
+    margin: 10px 0;
+    line-height: 20px;
+    font-weight: 35 0;
+}
+
+.ProfileDetails .ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+}
+
+.ProfileDetails .ul li {
+    display: flex;  
+    align-items: center;
+}
+
+#portfolio:hover{
+    text-decoration: underline;
+    color: blue;
+    font-weight: 700;
+}
+
+.ProfileDetails ul li p{
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0 10px;
+    margin: 2px ;
+}
+
+.follow{
+    display: flex;    
+    align-items: center;
+    margin: 0 0 0 -3%;
+}
+
+.follow p{
+    font-weight: 600;
+    padding: 0 0 0 20px;
+}
+
+.follow label{
+    padding: 0% 8px;
+    font-weight: 300;
+}
+
+
+
+

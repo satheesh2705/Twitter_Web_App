@@ -1,0 +1,694 @@
+.Login{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 0%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#firstRound{
+    position: absolute;
+    top: -25%;
+    left: -15%;
+    height: 480px;
+    width: 480px;
+    background: linear-gradient(180deg, rgba(165, 8, 126, 0.3) 15%, rgba(144, 8, 199, 0.3) 39%, rgba(82, 20, 178, 0.3) 54%, rgba(53, 7, 141, 0.3) 72%, rgba(1, 2, 54, 0.3) 100%);
+    border-radius: 50%;
+    transition: 10s;
+    animation: rotate 20s infinite;
+}
+
+@keyframes  movefirstRound {
+    0%{transform:rotate(180deg)}
+    25%{transform:rotate(270deg)}
+    50%{transform:translateX(200px)}
+    100%{transform:translateX(0)}
+
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  #secondRound{
+    position: absolute;
+  }
+
+.Login{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    padding: 0% 7% 0 0;
+}
+
+.LoginLabel h1{
+    font-size: 5rem;
+    margin: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.LoginLabel p{
+    font-size: 25px;
+    border: 2px white solid;
+    width: fit-content;
+    padding: 10px 15px;
+}
+.LoginForm{
+    height: 80vh;
+    width: 24vw;
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    padding: 30px 20px 20px 20px;
+
+}
+.LoginFormHead h2{
+    margin: 8% 10px 0 10px;
+    padding: 0%;
+}
+
+.LoginFormHead p{
+    margin:  5px  10px 0 10px;
+    padding: 0%;
+}
+
+.LoginDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+}
+
+#UserName,
+#Password
+{
+    height: 11%;
+    width: 80%;
+    border-radius: 7px;
+    margin: 3px 0;
+    padding: 0% 7px;
+    border: 1px white solid;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+.LoginDetails div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:-3% 0 0 -53%;
+}
+
+.LoginDetails div p{
+    margin: 0%;
+    padding: 0 5px;
+}
+
+.LoginDetails div input{
+    margin: 0%;
+    padding: 0%;
+    height: 15px;
+    width: 15px;
+
+}
+
+.LoginDetails button
+{
+    height: 12%;
+    width: 80%;
+    border-radius: 7px;
+    margin: 3px 0;
+    background: rgb(4, 28, 63);
+    background: linear-gradient(90deg, rgb(12, 58, 145) 0%, rgba(166,75,180,1) 50%, rgba(108,27,100,1) 99%);
+    border: none;
+    font-size: 17px;
+    color: antiquewhite;
+    font-weight: 700;
+}
+
+#ForgetPassword{
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    margin: -5% 0 0 0 ;
+}
+
+#ForgetPassword:hover{
+   font-weight: 700;
+   color: blue;
+   cursor: pointer;
+   text-decoration: underline;
+   transition: 0.7s;
+   font-size: 16px;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.LoginFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    margin-top: -10% 0  0 0;
+
+}
+
+.LoginFooterTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LoginFooterTop div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 0 0;
+}
+
+.LoginFooterTop div:nth-child(1) p:nth-child(1),
+.LoginFooterTop div:nth-child(1) p:nth-child(3){
+    width: 140px;
+    height: 0.5px;
+    color: rgb(255, 255, 255);
+    border-top: 1px rgb(250, 250, 250) solid;
+}
+
+.LoginFooterTop div:nth-child(1) p:nth-child(2){
+    padding: 0% 5px;
+}
+
+
+/* google facebook and github icons */
+.LoginFooterTop div:nth-child(2){
+   display: flex;
+   justify-content: space-around;
+   width: 40%;
+   margin: 7% 0 0 0;
+   padding: 0%;
+}
+
+.LoginFooterTop div:nth-child(2) *{
+    font-size: 25px;
+}
+
+/* #GoogleIcon{
+
+} */
+
+#FaceBookIcon{
+    color: rgb(10, 53, 173);
+    /* background-color: blue; */
+    border-radius: 15%;
+}
+
+#GitIcon{
+    color: rgb(255, 255, 255);
+    /* background-color: black; */
+}
+
+.LoginFooterBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.LoginFooterBottom p:nth-child(2){
+    
+    margin: 0 10px;
+}
+
+.LoginFooterBottom p:nth-child(2):hover{
+   font-weight: 700;
+   color: blue;
+   font-size: 18px;
+   cursor: pointer;
+   text-decoration: underline;
+   transition: 0.7s ;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 1300px) {
+    .LoginForm{
+        width: 35vw;
+    }
+}
+
+#InCorrectPass{
+    display: none;
+    color: red;
+    font-weight: 400;
+}
+
+/* =================================================================================== */
+                /*                 sign up page                                        */
+/* ============================================================== =====================*/
+
+.SignUp{
+    background-color: black;
+    color: white;
+    padding: 0%;
+    margin: 0%;
+}
+
+.topStartCircle{
+    border-radius: 50%;
+    transition: 5s;
+    animation: rotate 20s infinite;
+    height: 185px;
+    width: 185px;
+    background: linear-gradient(to top, rgba(34, 8, 87,0.3) 23%, rgb(3, 20, 133,0.4) 61%, rgba(7, 13, 84, 0.1) 100%);
+    border: 2px black solid;
+    position: absolute;
+    top: -2.1%;
+    right: 23.2%;
+    box-shadow: 5px 0 6px -1px rgba(148, 141, 141, 0.5  );
+}
+
+.topStartCircle:hover{
+    animation: none;
+}
+
+.bottomEndCircle{
+     border-radius: 50%;
+    height: 400px;
+    width:400px;
+    background: linear-gradient(to top, rgba(34, 8, 87,0.4) 23%, rgb(3, 20, 133,0.4) 61%, rgba(7, 13, 84, 0.1) 100%);
+    border: 2px black solid;
+    position: absolute;
+    top: 12%;
+    left: 1.6%;
+    box-shadow: 5px 0 6px -1px rgba(148, 141, 141, 0.5  );
+}
+
+.bottomEndCircle:hover{
+        transition: 0.1s;
+        animation: rotate 2s 1;
+}
+
+
+@keyframes  movefirstRound {
+    0%{transform:rotate(180deg)}
+    25%{transform:rotate(270deg)}
+    50%{transform:translateX(200px)}
+    100%{transform:translateX(0)}
+
+}
+
+.SignUpPage{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.SignUpLabes h1{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.SignUpLabes p{
+    font-size: 25px;
+    border: 2px white solid;
+    width: fit-content;
+    padding: 10px 17px;
+    margin-left: 7%;
+}
+.SignUpBox{
+    height: 80%;
+    width: 25%;
+    border: 1px white solid;
+    border-radius: 8px;
+    
+}
+
+.SignUpHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 20%;
+    margin: 3% 0 -4% 10% ;
+} 
+
+.SignUpBox h2{
+    margin:5% 0 0 0 ;
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.SignUpBox p{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.SignUpForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+}
+
+.SignUpForm input{
+    width: 260px;
+    height: 38px;
+    border: 1px white solid;;
+    outline: none;
+    border-radius: 7px;
+    padding: 0 0 0 5%;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+}
+
+.SignUpForm button{
+    height: 38px;
+    width: 283px;
+    border: none;
+    background: linear-gradient(90deg, rgba(12, 84, 151, 0.7) 0%, rgb(17, 2, 102) 70%, rgb(18, 6, 75) 100%);
+    border-radius: 10px;
+}
+#ValidDetail{
+    display: none;
+    color: red;
+
+}
+.SignUpFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+    height: 28%;
+    margin: 4% 0;
+}
+
+.SignUpFooterTop div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 0 0;
+}
+
+.SignUpFooterTop div:nth-child(1) p:nth-child(1),
+.SignUpFooterTop div:nth-child(1) p:nth-child(3){
+    width: 119px;
+    height: 0.5px;
+    color: rgb(255, 255, 255);
+    border-top: 1px rgb(250, 250, 250) solid;
+}
+
+.SignUpFooterTop div:nth-child(1) p:nth-child(2){
+    padding: 0% 10px;
+}
+
+.SignUpFooterTop div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 0 0;
+    padding: 0%;
+ }
+ 
+ .SignUpFooterTop div:nth-child(2) *{
+    padding: 0 3%;
+    font-size: 1.5rem;
+}
+.SignUpFooterBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+.SignUpFooterBottom div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 6% 0;
+}
+
+.SignUpFooterBottom div:nth-child(1) p:nth-child(2){
+    margin: 0 10px;
+}
+.SignUpFooterBottom div:nth-child(1) p:nth-child(2):hover{
+    color: blue;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.SignUpFooterBottom div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpFooterBottom div:nth-child(2) *{
+    padding: 0 7px;
+    font-size: 12px;
+}
+
+.SignUpFooterBottom div:nth-child(2) *:hover{
+   color: rgb(13, 53, 128);
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++==================================================+++++ */
+
+                        /* Forget Password */
+
+/* +++++++++============================================+++++++ */
+/* ************************************************************* */
+
+.ForgetPassword{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+.ForgetbottomEndCircle{
+    border-radius: 50%;
+    height: 500px;
+    width:500px;
+    background: linear-gradient(to top, rgba(49, 14, 43, 0.4) 10%, rgba(185, 9, 112, 0.4) 31%, rgba(209, 60, 152, 0.1) 70%);
+    border: 2px black solid;
+    position: absolute;
+    top: -40%;
+    right: -10%;
+    box-shadow: 5px 0 6px -1px rgba(148, 141, 141, 0.5  );
+    animation: rotate 2s 1;
+}
+
+.ForgetPasswordLabel h1{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ForgetPasswordLabel p{
+    font-size: 25px;
+    border: 2px white solid;
+    width: fit-content;
+    padding: 10px 17px;
+    margin-left: 1%;
+}
+
+.ForgetPasswordBox{
+    height: 80%;
+    width: 28%;
+    border: 1px white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:10px;
+
+}
+
+.ForgetPasswordForm{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ForgetPasswordForm div:nth-child(1){
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.ForgetPasswordForm input{
+   width:270px;
+   height: 37px;
+   border-radius: 7px;
+   background-color:black;
+   font-weight:400;
+   padding-left:5%;
+   border:1px white solid;
+   color: white;
+   font-size: 15px;
+}
+.ForgetPasswordForm button{
+    width:289px;
+    height: 38px;
+    border-radius: 7px;
+    border:none;
+    font-weight:600;
+     /* margin-top:5%; */
+     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+ }
+
+
+.ForgetPasswordForm div:nth-child(1) h2,
+.ForgetPasswordForm div:nth-child(1) p{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* ForgetPassWordFooter */
+
+.ForgetPassWordFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+.ForgetPassWordFooter div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+.ForgetPassWordFooter div:nth-child(1) p:nth-child(2){
+    margin: 0 10px;
+}
+.ForgetPassWordFooter div:nth-child(1) p:nth-child(2):hover{
+    color: blue;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.ForgetPassWordFooter div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -3% 0 0 0 ;
+}
+
+.ForgetPassWordFooter div:nth-child(2) *{
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+.ForgetPassWordFooter div:nth-child(2) *:hover{
+   color: rgb(13, 53, 128);
+}
+
+
+
+
+
+/* src/OtpPage.css */
+.OTP{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.otp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+  }
+  
+  .otp-form {
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .otp-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .otp-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px white solid;
+    outline: none;
+    border-radius: 4px;
+    background-color: #333333; /* Dark input background */
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .otp-input::placeholder {
+    color: #aaaaaa; /* Placeholder text color */
+  }
+  
+  .otp-submit {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #6200ea; /* Accent color */
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 110%;
+  }
+  
+  .otp-submit:hover {
+    background-color: #3700b3; /* Darker accent color on hover */
+  }
+
+  .otp-form div{
+    display: flex;
+  }
+
+  .otp-form div p:nth-child(2){
+    padding: 0% 5px;
+  }
+
+  .otp-form div p:nth-child(2):hover{
+    color: blue;
+    font-weight: 500;
+  }

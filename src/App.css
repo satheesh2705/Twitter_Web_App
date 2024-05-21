@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -28,11 +28,121 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+
+
+  /*  */
+ 
+
+  .App{
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+h1{
+  margin: 0%;
+  padding: 0%;
+
+}
+
+.Nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 23vw;
+    height: 100vh;
+    background-color: black;
+    border-right: 0.6px rgb(172, 166, 166) solid;
+}
+
+.NavBar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.NavBar ul li{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: 369;
+      margin: 0%;      
+      cursor: pointer;   
+      color: azure;
+}
+
+.NavBar ul li:hover,
+.Nav-Foot:hover{
+  background-color: rgba(116, 113, 113,0.6);
+  border-radius: 50px;
+}
+
+.link{
+  text-decoration: none;
+  
+}
+
+.NavBar ul li * {
+  padding: 10px 15px;
+  margin: 0%; 
+  text-transform: capitalize;
+}
+.PostBox{
+  display: flex;
+  justify-content:center;
+  align-items: start;
+  width: 90%;
+}
+#PostBtn{
+  height: 40px;
+  width: 220px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(3, 92, 226,0.9);
+  font-size: 17px;
+  font-weight: 580;
+  color: white;
+  margin: -35px 0 0 8%;
+}
+
+#PostBtn:hover{
+  background-color: rgb(39, 98, 187);
+}
+
+.Nav-Foot{
+  margin:0px 0 20px 10px;
+  padding: 7px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+
+}
+
+.Nav-Foot div  *{
+  margin: 0%;
+  cursor: pointer;
+  color: white;
+}
+
+.Nav-Foot p{
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.Nav-Foot img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
