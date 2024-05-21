@@ -1,5 +1,0 @@
-//   folder structure
-        source
-            pages
-            componant
-
