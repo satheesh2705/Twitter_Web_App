@@ -50,6 +50,9 @@ h1{
   padding: 0%;
 
 }
+.parantNav{
+  display: flex;
+}
 
 .Nav{
     display: flex;
@@ -68,6 +71,7 @@ h1{
   justify-content: space-between;
 
 }
+
 .NavBar ul li{
       display: flex;
       justify-content: start;

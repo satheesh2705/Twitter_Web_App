@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 import { GoHome } from "react-icons/go";
 import { IoSearch } from "react-icons/io5"; 
 import { MdNotificationsNone } from "react-icons/md";
@@ -14,12 +14,12 @@ import ajith from '../Assets/ajith.jpeg'
 
 const Nav = () => {
   return (
-
-    <nav className="Nav">
+    <div className="parantNav">
+        <nav className="Nav">
         <div className='NavBar'>
             <ul>
                 <h1>This is Mr</h1>
-                <Link className="link" to='home'>  <li>  <GoHome /> <p>Home</p></li> </Link>
+                <NavLink className="link" to='home'>  <li>  <GoHome /> <p>Home</p></li> </NavLink>
                 <Link className="link">  <li> <IoSearch /> <p>Explore</p></li></Link>
                 <Link className="link"> <li> <MdNotificationsNone /> <p>notification</p></li></Link>
                 <Link className="link"> <li> <CiMail /> <p>Message</p></li></Link>
@@ -27,9 +27,9 @@ const Nav = () => {
                 {/* <li> <FaRegBookmark /> <p>bookmarks</p> </li>  */}
                 <Link className="link">  <li> <AiOutlineUsergroupAdd /> <p>communities</p></li> </Link> 
                 <Link className="link">  <li> <TbPremiumRights /> <p>premium</p></li></Link>
-                <Link className="link" to='pro'> <li> <CgProfile /> <p>profile</p></li> </Link>
+                <NavLink className="link" to='profile'> <li> <CgProfile /> <p>profile</p></li> </NavLink>
                 <Link className="link"> <li> <CiCircleMore /> <p>more</p></li>  </Link>                       
-            </ul>                
+            </ul>               
         </div>    
         <div className="PostBox">
         <button id='PostBtn'>Post</button>
@@ -44,6 +44,8 @@ const Nav = () => {
             <p>...</p>
         </div>
     </nav>
+     <Outlet /> 
+    </div>
   )
 }
 

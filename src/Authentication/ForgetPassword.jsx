@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../css/Authentication.css'
 
-const ForgetPassword = () => {
+const ForgetPassword = ({handleGetOtp, checkUserMailId, setCheckUserMailId}) => {
   return (
     <div className='ForgetPassword'>
 
@@ -13,16 +13,21 @@ const ForgetPassword = () => {
           <p>Take to back..! </p>
       </div>
       <div className="ForgetPasswordBox">
-        <form className='ForgetPasswordForm' >
+        <form className='ForgetPasswordForm' onSubmit={handleGetOtp}>
             <div>
               <h2>Forget Password ?</h2>
               <p>Enter Your Email</p>
             </div>
-            <input type="email" placeholder='example@gmail.com' />
+            <input 
+              type='mail'
+              placeholder='example@gmail.com' 
+              value={checkUserMailId}
+              onChange={e => setCheckUserMailId(e.target.value)}
+              />
             <div>
-            <button>Get OTP</button>
+              <button type='submit'>Get OTP</button>
             </div>
-            </form>
+        </form>
         <div className='ForgetPassWordFooter'>
         <div>
                     <p>Don't have an account ?</p>

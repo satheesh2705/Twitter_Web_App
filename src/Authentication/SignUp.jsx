@@ -5,7 +5,12 @@ import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
 import { TbBrandGithub } from "react-icons/tb";
 
-const SignUp = () => {
+const SignUp = ({
+
+  handleSignUp, newUserName, setNewUserName, newPassword, setNewPassword, 
+  confirmPassword, setConfirmPassword, newMailId, setNewMailId
+
+                }) => {
   return (
     <div className='SignUp'>
       <div className='topStartCircle'>
@@ -22,12 +27,38 @@ const SignUp = () => {
             <h2>Sign Up</h2>
               <p>Just some details to get you in .!</p>
             </div>
-            <form className='SignUpForm'>
-              <input type="text" placeholder=' UserName'  id='UN' />
-              <input type="email" placeholder=' Email / Phone ' id='MID'/>
-              <input type="password" placeholder='Password' id='PW' />
-              <input type="password" placeholder='Confirm Password' id='CPW' />
+            <form className='SignUpForm' onSubmit={handleSignUp}>
+              <input 
+                type="text" 
+                placeholder=' UserName'  
+                id='UN' 
+                value={newUserName}
+                onChange={e => setNewUserName(e.target.value)}
+              />
+              <input 
+                type="email" 
+                placeholder=' Email' 
+                id='MID'
+                value={newMailId}
+                onChange={e => setNewMailId(e.target.value)}
+              />
+              <input 
+                type="password" 
+                placeholder='Password' 
+                id='PW'
+                value={newPassword}
+                onChange={e => setNewPassword(e.target.value)}
+              />
+              <input 
+                type="password" 
+                placeholder='Confirm Password' 
+                id='CPW'
+                value={confirmPassword}
+                onChange={e => setConfirmPassword(e.target.value)}
+              />
+
               <button type='submit'>SignUp</button>
+              
               <p id='ValidDetail'>Enter Valid Details...</p>
             </form>
             <div className='SignUpFooter'>
@@ -47,7 +78,7 @@ const SignUp = () => {
                 <div className='SignUpFooterBottom'>
                   <div>
                     <p>Already have an account ?</p>
-                    <Link to='/'> <p>Login</p></Link>
+                    <Link to='/' id='link'> <p>Login</p></Link>
                   </div>
                   <div>
                       <p>Terms & Condition</p>
@@ -58,7 +89,6 @@ const SignUp = () => {
             </div>
           </div>
       </div>
-
     </div>
   )
 }

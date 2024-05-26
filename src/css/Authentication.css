@@ -36,9 +36,7 @@
     }
   }
 
-  #secondRound{
-    position: absolute;
-  }
+
 
 .Login{
     display: flex;
@@ -270,7 +268,7 @@
     height: 185px;
     width: 185px;
     background: linear-gradient(to top, rgba(34, 8, 87,0.3) 23%, rgb(3, 20, 133,0.4) 61%, rgba(7, 13, 84, 0.1) 100%);
-    border: 2px black solid;
+    border: 2px rgba(0, 0, 0, 0.336) solid;
     position: absolute;
     top: -2.1%;
     right: 23.2%;
@@ -286,7 +284,7 @@
     height: 400px;
     width:400px;
     background: linear-gradient(to top, rgba(34, 8, 87,0.4) 23%, rgb(3, 20, 133,0.4) 61%, rgba(7, 13, 84, 0.1) 100%);
-    border: 2px black solid;
+    border: 2px rgba(0, 0, 0, 0.274) solid;
     position: absolute;
     top: 12%;
     left: 1.6%;
@@ -443,10 +441,14 @@
     align-items: center;
     margin: 0 0 6% 0;
 }
+.SignUpFooterBottom div:nth-child(1) p:nth-child(1){
+    margin: 0 4px;
+}
 
 .SignUpFooterBottom div:nth-child(1) p:nth-child(2){
-    margin: 0 10px;
+    margin: 0 20px;
 }
+
 .SignUpFooterBottom div:nth-child(1) p:nth-child(2):hover{
     color: blue;
     font-weight: 700;
@@ -492,7 +494,7 @@
     height: 500px;
     width:500px;
     background: linear-gradient(to top, rgba(49, 14, 43, 0.4) 10%, rgba(185, 9, 112, 0.4) 31%, rgba(209, 60, 152, 0.1) 70%);
-    border: 2px black solid;
+    border: 2px rgba(0, 0, 0, 0.315) solid;
     position: absolute;
     top: -40%;
     right: -10%;
@@ -556,8 +558,8 @@
     border:none;
     font-weight:600;
      /* margin-top:5%; */
-     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
- }
+     background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
+}
 
 
 .ForgetPasswordForm div:nth-child(1) h2,
@@ -607,32 +609,47 @@
    color: rgb(13, 53, 128);
 }
 
-
-
-
-
 /* src/OtpPage.css */
+
+.otp-label h1{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 2s 1;
+    transition: 4s;
+    cursor: pointer;
+}
+
+
 .OTP{
     height: 100vh;
     width: 100vw;
     background-color: black;
+    /* background-image: linear-gradient(90deg, #231557 0%, #44107A 59%, #610859 70%, rgba(82, 6, 44, 0.877) 99%); */
     color: white;
     display: flex;
     justify-content:space-around;
     align-items:center;
+
 }
 .otp-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-color: #121212; /* Dark background */
+    /* Dark background */
     color: #ffffff; /* White text */
+    animation: rotate 2s 1;
+    transition: 4s;
+    cursor: pointer;
   }
-  
+
   .otp-form {
-    background-color: #1e1e1e; /* Slightly lighter dark background */
+    background-color: #4352a709; /* Slightly lighter dark background */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -640,17 +657,19 @@
     flex-direction: column;
     align-items: center;
     height: 50vh;
+    border: 1px white solid;
   }
   
   .otp-title {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin: 4.5rem 0 1.2rem 0 ;
+    font-size: 1rem;
+    font-weight: 500;
   }
   
   .otp-input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+    width: 90%;
+    padding: 0.5rem;    
+    margin: 0.5rem 0 1.5rem 0;
     border: 1px white solid;
     outline: none;
     border-radius: 4px;
@@ -669,12 +688,21 @@
     border: none;
     border-radius: 4px;
     background-color: #6200ea; /* Accent color */
+    background-image: linear-gradient(to left, #160457 0%, #4d158a 59%, #74056a 70%, rgba(230, 19, 125, 0.219) 99%);
     color: #ffffff;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 110%;
+    width: 100%;
+    margin: 0.5rem 0 1.5rem 0;
   }
+
+  .otp-submit:hover{
+    font-weight: 900;
+    transition: 4s;
+    background-image: linear-gradient(to right, #160457 0%, #4d158a 59%, #74056a 70%, rgba(230, 19, 124, 0.877) 99%);
+    font-weight: 800;
+}
   
   .otp-submit:hover {
     background-color: #3700b3; /* Darker accent color on hover */
@@ -691,4 +719,106 @@
   .otp-form div p:nth-child(2):hover{
     color: blue;
     font-weight: 500;
+    cursor: pointer;
   }
+
+  #link{
+    text-decoration: none;
+    /* background-color: red; */
+  }
+
+/*   ============================ */
+  /* pasword set page */
+  /* ============================ */
+
+  .paswordRound{
+    position: absolute;
+    top: 14%;
+    left: 11%;
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(180deg, rgba(165, 8, 126, 0.3) 15%, rgba(144, 8, 199, 0.3) 39%, rgba(82, 20, 178, 0.3) 54%, rgba(53, 7, 141, 0.3) 72%, rgba(1, 2, 54, 0.3) 100%);
+    border-radius: 50%;
+    transition: 10s;
+  
+  }
+
+.paswordRound:hover{
+  animation: rotate 2s infinite;
+  box-shadow: 0 4px 8px rgba(250, 250, 250, 0.5); 
+}
+ .NewPassword{
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.NewPasswordLabel h1{
+    font-size: 4rem;
+    width: 90%;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-style: italic;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.container {
+    background-color:black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    border: 1px rgba(255, 255, 255, 0.507) solid;
+}
+
+.container h2{
+    margin:25% 0 5% 0;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 92%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00000079;
+    color: #ffffff;
+    font-size: 16px;
+    margin:3.6% 2%;
+    border: 1px rgba(255, 255, 255, 0.507) solid;
+    
+}
+
+button {
+    background: linear-gradient(to left, rgba(165, 8, 126, 0.3) 15%, rgba(144, 8, 199, 0.3) 39%, rgba(82, 20, 178, 0.3) 54%, rgba(53, 7, 141, 0.3) 72%, rgba(1, 2, 54, 0.3) 100%);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 12%;
+}
+
+button:hover {
+    font-weight: 800;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(165, 8, 126, 0.3) 15%, rgba(144, 8, 199, 0.3) 39%, rgba(82, 20, 178, 0.3) 54%, rgba(53, 7, 141, 0.3) 72%, rgba(1, 2, 54, 0.3) 100%);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+}
