@@ -214,18 +214,27 @@ function App() {
         )
     }
 
-    checkpass()
+    // checkpass()
   
 
   return (
     <div className="App">
 
 
+      <Routes>  
+        
+          <Route path='/' element={ 
+            <Login 
+              checkUserName={checkUserName}
+              setCheckUserName={setCheckUserName}
+              checkUserPassword={checkUserPassword}
+              setCheckUserPassword={setCheckUserPassword}
+              handleLogin={handleLogin}
+            />
+           }/>
 
-      <Routes>
-    
-        {/* <Route path='signup' element={
-           <SignUp 
+          <Route path='signup' element={
+            <SignUp 
               newUserName={newUserName}
               setNewUserName={setNewUserName}
               newPassword={newPassword}
@@ -235,33 +244,24 @@ function App() {
               newMailId={newMailId} 
               setNewMailId={setNewMailId}
               handleSignUp={handleSignUp}
-          />
-          } /> 
-        */}
-
-         <Route path='/' element={ 
-          <Login 
-              checkUserName={checkUserName}
-              setCheckUserName={setCheckUserName}
-              checkUserPassword={checkUserPassword}
-              setCheckUserPassword={setCheckUserPassword}
-              handleLogin={handleLogin}
-          />} />
+            />
+           }/> 
 
           <Route path='forgetpassword' element={ 
             <ForgetPassword 
             handleGetOtp={handleGetOtp}
             checkUserMailId={checkUserMailId}
             setCheckUserMailId={setCheckUserMailId}
-            />} />
+            />
+           }/>
 
           <Route path='otp' element={
             <OTP 
             checkUserOTP={checkUserOTP}
             setCheckUserOTP={ setCheckUserOTP}
             handleCheckOtp={handleCheckOtp}
-           />
-        } />
+            />
+          }/>
 
           <Route path='setpassword' element={
               <NewPassword 
@@ -271,13 +271,13 @@ function App() {
               setConfirmPassword={setConfirmPassword}
               handleNewPassWord={handleNewPassWord}
             />
-            }
-            />     
-          {/* <Route path='nav' element={ <Nav /> }>
+           }/>
+
+          <Route path='nav' element={ <Nav /> }>
             <Route path='home' element={ <Home /> } />
             <Route path='profile' element={<Profile />} />
           </Route>
-           */}
+          
        
 
       </Routes>
