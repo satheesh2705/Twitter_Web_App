@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import { GoHome } from "react-icons/go";
 import { IoSearch } from "react-icons/io5"; 
 import { MdNotificationsNone } from "react-icons/md";
@@ -20,15 +20,15 @@ const Nav = () => {
             <ul>
                 <h1>This is Mr</h1>
                 <NavLink className="link" to='home'>  <li>  <GoHome /> <p>Home</p></li> </NavLink>
-                <Link className="link">  <li> <IoSearch /> <p>Explore</p></li></Link>
-                <Link className="link"> <li> <MdNotificationsNone /> <p>notification</p></li></Link>
-                <Link className="link"> <li> <CiMail /> <p>Message</p></li></Link>
-                <Link className="link" > <li> <CiViewList /> <p>List</p></li> </Link>
+                <NavLink className="link" to='explore'>  <li> <IoSearch /> <p>Explore</p></li></NavLink>
+                <NavLink className="link"> <li> <MdNotificationsNone /> <p>notification</p></li></NavLink>
+                <NavLink className="link"> <li> <CiMail /> <p>Message</p></li></NavLink>
+                <NavLink className="link" > <li> <CiViewList /> <p>List</p></li> </NavLink>
                 {/* <li> <FaRegBookmark /> <p>bookmarks</p> </li>  */}
-                <Link className="link">  <li> <AiOutlineUsergroupAdd /> <p>communities</p></li> </Link> 
-                <Link className="link">  <li> <TbPremiumRights /> <p>premium</p></li></Link>
+                <NavLink className="link">  <li> <AiOutlineUsergroupAdd /> <p>communities</p></li> </NavLink> 
+                <NavLink className="link">  <li> <TbPremiumRights /> <p>premium</p></li></NavLink>
                 <NavLink className="link" to='profile'> <li> <CgProfile /> <p>profile</p></li> </NavLink>
-                <Link className="link"> <li> <CiCircleMore /> <p>more</p></li>  </Link>                       
+                <NavLink className="link"> <li> <CiCircleMore /> <p>more</p></li>  </NavLink>                       
             </ul>               
         </div>    
         <div className="PostBox">
@@ -45,6 +45,9 @@ const Nav = () => {
         </div>
     </nav>
      <Outlet /> 
+      <div>
+        <h1>hello</h1>
+      </div>
     </div>
   )
 }

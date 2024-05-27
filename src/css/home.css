@@ -2,9 +2,8 @@
 .Home{
     display:flex ;
     flex-direction: column;
-    width: 43vw;
+    width: 45vw;
     background-color:rgb(0, 0, 0);
-    border-right: 0.8px white solid;
     /* color: white; */
 }
 
@@ -69,25 +68,15 @@
     height: 94vh;
     overflow-x: hidden;
 }
+
+
 /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
 
 .Posts::-webkit-scrollbar {
     height: 10px;
     width: 6px;
   }
-  /* .Posts::-webkit-scrollbar-track {
-     background-color: #ebdfdf; 
-    border-radius: 3px;
-  }
-  
-  .Posts::-webkit-scrollbar-track:hover {
-    background-color: #B8C0C2;
-  }
-  
-  .Posts::-webkit-scrollbar-track:active {
-    background-color: #B8C0C2;
-  }
-   */
+
   .Posts::-webkit-scrollbar-thumb { 
     border-radius: 5px;
     background-color: #0c5c8a;
@@ -107,6 +96,10 @@
     flex-direction: column;   
     border-top: 0.5px white solid;
     border-bottom: 0.5px white solid;
+}
+
+.Post:hover{
+    background-color: rgba(128, 128, 128, 0.115);
 }
 
 .PostHeader{
@@ -194,7 +187,7 @@
 
 .PostBody img{
     height: 300px;
-    width: 380px;
+    width: 400px;
     border-radius: 10px;
     margin: 20px 0;
     border: 0.3px white solid;
@@ -373,6 +366,91 @@
     font-weight: 300;
 }
 
+/* ========================================= */
+                /* EXPLORE PAGE */
+/* ========================================= */
 
+.Explore{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    border: 0.5px white solid;
+    background-color: #000000;
+    color: white;
 
+}
+
+.ExploreHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px rgba(255, 255, 255, 0.596) solid;
+}
+
+.ExploreSearchBox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 66%;
+    border: 0.5px solid rgba(255, 255, 255, 0.582);
+    padding: 10px 2.5%;
+    border-radius: 50px;
+}
+.ExploreSearchBox *{
+    font-size: 1rem;
+}
+.ExploreSearchBox input{
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 0% 0 0 2%;
+    color: white;
+    background-color:black;
+}
+.ExploreHeader span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 8%;
+}
+
+.ExploreHeader span:hover{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.151);
+    transition: 1s;
+    border: 1px rgba(128, 128, 128, 0.098) solid;
+    font-weight: 900;
+    font-size: 1.2rem;
+
+}
+
+.ExploreNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px grey solid;  
+    color: gray;  
+}
+
+.ExploreNav *:hover{
+    height: 100%;
+    width: fit-content;
+    background-color: rgba(128, 128, 128, 0.507);
+    color: white;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 10px;
+
+    
+}
+
+.ExploreNav p:nth-child(1){
+   
+    
+}
 

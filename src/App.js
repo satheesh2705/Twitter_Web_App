@@ -10,6 +10,7 @@ import { Routes, Route, useNavigate} from "react-router-dom";
 import SignUp from '../src/Authentication/SignUp';
 import { useState } from 'react';
 import NewPassword from './Authentication/NewPassword';
+import Explore from './Pages/Explore';
 
 function App() {
   const navigate = useNavigate();
@@ -214,7 +215,7 @@ function App() {
         )
     }
 
-    // checkpass()
+    // checkpass() Mrblack3@#$
   
 
   return (
@@ -222,7 +223,7 @@ function App() {
 
 
       <Routes>  
-        
+{/*         
           <Route path='/' element={ 
             <Login 
               checkUserName={checkUserName}
@@ -271,15 +272,17 @@ function App() {
               setConfirmPassword={setConfirmPassword}
               handleNewPassWord={handleNewPassWord}
             />
-           }/>
+           }/> 
+          */}
 
-          <Route path='nav' element={ <Nav /> }>
-            <Route path='home' element={ <Home /> } />
+          <Route path='/' element={ <Nav /> }>
+          <Route path='explore' element={ <Explore /> } />
+
+            {/* <Route path='home' element={ <Home /> } />
             <Route path='profile' element={<Profile />} />
+            <Route path='communities' element={<Communities />} /> */}
           </Route>
           
-       
-
       </Routes>
         
     </div>
