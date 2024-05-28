@@ -36,7 +36,7 @@ const NewPassword = ({newPassword, setNewPassword, confirmPassword, setConfirmPa
                 onChange={e => setConfirmPassword(e.target.value)}    
             />
             </div>
-            <button type="submit">Submit</button>
+            <button id='setPasswordButton' type="submit">Submit</button>
         </form>
     </div>
     </div>

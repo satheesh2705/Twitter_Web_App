@@ -280,7 +280,7 @@
 }
 
 .bottomEndCircle{
-     border-radius: 50%;
+    border-radius: 50%;
     height: 400px;
     width:400px;
     background: linear-gradient(to top, rgba(34, 8, 87,0.4) 23%, rgb(3, 20, 133,0.4) 61%, rgba(7, 13, 84, 0.1) 100%);
@@ -292,8 +292,8 @@
 }
 
 .bottomEndCircle:hover{
-        transition: 0.1s;
-        animation: rotate 2s 1;
+    transition: 0.1s;
+    animation: rotate 2s 1;
 }
 
 
@@ -382,11 +382,12 @@
     background: linear-gradient(90deg, rgba(12, 84, 151, 0.7) 0%, rgb(17, 2, 102) 70%, rgb(18, 6, 75) 100%);
     border-radius: 10px;
 }
+
 #ValidDetail{
     display: none;
     color: red;
-
 }
+
 .SignUpFooter{
     display: flex;
     flex-direction: column;
@@ -804,7 +805,7 @@
     
 }
 
-button {
+#setPasswordButton{
     background: linear-gradient(to left, rgba(165, 8, 126, 0.3) 15%, rgba(144, 8, 199, 0.3) 39%, rgba(82, 20, 178, 0.3) 54%, rgba(53, 7, 141, 0.3) 72%, rgba(1, 2, 54, 0.3) 100%);
     color: #ffffff;
     border: none;
@@ -816,7 +817,7 @@ button {
     margin-bottom: 12%;
 }
 
-button:hover {
+#setPasswordButton:hover {
     font-weight: 800;
     cursor: pointer;
     background: linear-gradient(to right, rgba(165, 8, 126, 0.3) 15%, rgba(144, 8, 199, 0.3) 39%, rgba(82, 20, 178, 0.3) 54%, rgba(53, 7, 141, 0.3) 72%, rgba(1, 2, 54, 0.3) 100%);

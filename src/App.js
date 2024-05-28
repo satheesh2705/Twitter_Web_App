@@ -11,6 +11,11 @@ import SignUp from '../src/Authentication/SignUp';
 import { useState } from 'react';
 import NewPassword from './Authentication/NewPassword';
 import Explore from './Pages/Explore';
+import Trendings from '../src/Componants/Trendings'
+import Sports from '../src/Componants/Sports'
+import News from '../src/Componants/News'
+import Entertaiment from '../src/Componants/Entertaiment'
+import Post from './Componants/Post';
 
 function App() {
   const navigate = useNavigate();
@@ -276,8 +281,13 @@ function App() {
           */}
 
           <Route path='/' element={ <Nav /> }>
-          <Route path='explore' element={ <Explore /> } />
-
+          <Route path='explore' element={ <Explore /> } >
+            <Route path='foryou' element={<Post />}/>
+            <Route path='trendings' element={<Trendings />}/>
+            <Route path='news' element={<News />}/>
+            <Route path='sports' element={<Sports />}/>
+            <Route path='entertainments' element={<Entertaiment />}/>
+          </Route>
             {/* <Route path='home' element={ <Home /> } />
             <Route path='profile' element={<Profile />} />
             <Route path='communities' element={<Communities />} /> */}

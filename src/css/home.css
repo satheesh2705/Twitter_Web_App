@@ -431,11 +431,17 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 1px grey solid;  
+    border-bottom: 0.3px grey solid;  
     color: gray;  
 }
 
-.ExploreNav *:hover{
+#ExploreNavLink{
+    text-decoration: none;
+    font-size: 1rem;
+    color: grey;
+}
+
+#ExploreNavLink:hover{
     height: 100%;
     width: fit-content;
     background-color: rgba(128, 128, 128, 0.507);
@@ -444,13 +450,176 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0% 10px;
-
-    
+    padding: 0% 10px;    
+    text-decoration: none;
+    border-radius: 3px
 }
 
-.ExploreNav p:nth-child(1){
-   
+#ExploreNavLink.active{
+    height: 90%;
+    width: fit-content;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 10px;    
+    text-decoration: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: 6px rgb(3, 6, 180) solid;
+}
+/* ============================= */
+        /* Recommends */
+/* ============================= */
+
+.RecommendsBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 31vw;    
+    color: white;
+    background-color: black;
     
+
 }
 
+.RecomendedUser{
+    width: 80%;
+    min-height: fit-content;
+    max-height: 83vh;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px rgba(255, 255, 255, 0.795) solid;
+    border-radius: 20px;
+    margin: 5% 2% 2% 2%;
+    padding: 2%;
+    overflow-x: hidden;
+}
+
+.RecomendedUser::-webkit-scrollbar {
+    height: 5px;
+    width: 6px;
+  }
+
+  .RecomendedUser::-webkit-scrollbar-thumb { 
+    border-radius: 5px;
+    background-color: #0c5c8a81;
+  }
+  
+  .RecomendedUser::-webkit-scrollbar-thumb:hover {
+    background-color: #116cd4;
+  }
+  
+  .RecomendedUser::-webkit-scrollbar-thumb:active {
+    background-color: #85e762;
+  }
+
+.RecomendedUser h2{
+    margin:4% 0 2% 7%;
+    text-transform: capitalize;
+}
+
+.Recommends{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8% 0 4%;
+}
+
+.Recommends:hover{
+    background-color: rgba(128, 128, 128, 0.142);
+    border-radius: 15px;
+    transition: 2s;
+}
+
+.UserStart{
+    display: flex;
+    align-items: center;
+    margin: 5% 3% 3% 3%;
+}
+
+.UserStart div{
+    padding: 0% 10%;
+}
+
+.UserStart div *{
+    padding: 0%;
+    margin: 0%;
+}
+
+.UserStart div h4{
+   text-transform: capitalize;
+   cursor: pointer;
+}
+
+.UserStart div p{
+   font-weight: 250;
+   text-transform: lowercase;
+   cursor: pointer;
+}
+
+.UserStart div h4:hover{
+    text-decoration: underline;
+}
+
+.UserStart div p:hover{
+    font-weight: 350;
+    color: white;
+}
+
+.UserStart img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;   
+}
+
+#FollowButton{
+    height: 33px;
+    width: 68px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 0 0 15px wheat;
+}
+
+#FollowButton:hover{
+    color: rgb(187, 174, 174);
+    cursor: pointer;
+}
+
+.RecommendsBoxFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0% 0%;
+
+}
+
+.RecommendsBoxFooter div:nth-child(1),
+.RecommendsBoxFooter div:nth-child(2)
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0% 5%;
+    margin: 0%;
+}
+
+.RecommendsBoxFooter div:nth-child(1) *,
+.RecommendsBoxFooter div:nth-child(2) *{
+    margin: 1% 0 0 0 ;
+    padding: 0.7% 0 0 0;
+}

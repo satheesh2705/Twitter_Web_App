@@ -11,6 +11,7 @@ import { TbPremiumRights } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { CiCircleMore } from "react-icons/ci";
 import ajith from '../Assets/ajith.jpeg'
+import Recommends from '../Componants/Recomends';
 
 const Nav = () => {
   return (
@@ -44,9 +45,31 @@ const Nav = () => {
             <p>...</p>
         </div>
     </nav>
-     <Outlet /> 
-      <div>
-        <h1>hello</h1>
+     <Outlet />   
+      <div className='RecommendsBox'>
+        <div className='RecomendedUser'>
+          <h2> Who to follow </h2>
+            <Recommends />
+            {/* <Recommends />
+            <Recommends />
+            <Recommends />
+            <Recommends />
+            <Recommends />
+            <Recommends /> */}
+        </div>
+        <div className='RecommendsBoxFooter'>
+            <div>
+              <p>Terms of service</p>
+              <p>privacy policy</p>
+              <p>cookie policy</p>
+            </div>
+            <div>
+              <p>Accessibility</p>
+              <p>ads info</p>
+              <p>more...</p>
+              <p>2024 x crop</p>
+            </div>
+        </div>
       </div>
     </div>
   )
