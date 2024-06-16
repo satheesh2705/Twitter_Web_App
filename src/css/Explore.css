@@ -1,0 +1,321 @@
+
+/* ========================================= */
+                /* EXPLORE PAGE */
+/* ========================================= */
+
+.Explore{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    border: 0.5px white solid;
+    background-color: #000000;
+    color: white;
+
+}
+
+.ExploreHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px rgba(255, 255, 255, 0.596) solid;
+}
+
+.ExploreSearchBox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 66%;
+    border: 0.5px solid rgba(255, 255, 255, 0.582);
+    padding: 10px 2.5%;
+    border-radius: 50px;
+}
+.ExploreSearchBox *{
+    font-size: 1rem;
+}
+.ExploreSearchBox input{
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 0% 0 0 2%;
+    color: white;
+    background-color:black;
+}
+.ExploreHeader span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 8%;
+}
+
+.ExploreHeader span:hover{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.151);
+    transition: 1s;
+    border: 1px rgba(128, 128, 128, 0.098) solid;
+    font-weight: 900;
+    font-size: 1.2rem;
+
+}
+
+.ExploreNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.3px grey solid;  
+    color: gray;  
+}
+
+#ExploreNavLink{
+    text-decoration: none;
+    font-size: 1rem;
+    color: grey;
+}
+
+#ExploreNavLink:hover{
+    height: 100%;
+    width: fit-content;
+    background-color: rgba(128, 128, 128, 0.507);
+    color: white;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 10px;    
+    text-decoration: none;
+    border-radius: 3px
+}
+
+#ExploreNavLink.active{
+    height: 90%;
+    width: fit-content;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 10px;    
+    text-decoration: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: 6px rgb(3, 6, 180) solid;
+}
+
+.Trendings{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+.Trendings::-webkit-scrollbar {
+    height: 5px;
+    width: 6px;
+  }
+
+.Trendings::-webkit-scrollbar-thumb { 
+    border-radius: 5px;
+    background-color: #0c5c8a00;
+  }
+  
+.Trendings::-webkit-scrollbar-thumb:hover {
+    background-color: #116cd400;
+  }
+  
+  .Trendings::-webkit-scrollbar-thumb:active {
+    background-color: #85e76200;
+  }
+
+
+.Trendings h1{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 3%;
+}
+
+.TrendingTwits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 7% 0  0;
+}
+.TrendingTwitsDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.TrendingTwitsDetails p{
+    font-weight: 300;
+    color: white;
+    font-size: 14px ;
+     margin: 0%;
+    padding: 3px 0 0 0%;
+}
+
+.TrendingTwitsDetails p:hover{
+    color: white;
+    font-weight: 400;
+}
+
+.TrendingTwitsDetails h3{
+    text-shadow: 0 0 3px white;
+     margin: 0%;
+    padding: 3px 0 0 0%;
+} 
+
+
+.TrendingTwits div:nth-child(2) p{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px rgba(16, 19, 160, 0.005) solid;
+    
+}
+
+.TrendingTwits div:nth-child(2) p:hover{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(20, 86, 209, 0.118);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+    border: 1px rgba(16, 19, 160, 0.345) solid;
+}
+
+
+
+            /* =================== ===================== */
+            /*              Notificatio                  */
+            /* =================== ===================== */
+
+.Notification{
+    width: 45vw;
+    flex-direction: column;
+    background-color: black;
+    border-right: 0.5px white solid;
+    color: white;
+    
+}
+
+.NotificationHeader{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px grey solid;
+    align-items: center;
+    height: 10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.NotificationHeader h1:hover{
+    background-color: rgba(128, 128, 128, 0.24);
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NotificationHeader span:hover{
+    background-color: rgba(128, 128, 128, 0.24);
+    height: 100%;
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NotificationType{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-bottom: 1px grey solid;
+}
+
+#NotificationNavLink{
+    text-decoration: none;
+    color: rgb(158, 152, 152);
+}
+
+#NotificationNavLink:hover{
+    background-color: grey;
+    color: white;
+    padding:0 2%;
+}
+
+/* ================================== */
+/*      mention notification page */
+.MentionNotification,
+.AllNotifications,
+.VerifiedNotification
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+.MessageBody{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 15%;
+    width: 100%;
+    border-bottom: 1px grey solid;
+}
+
+.MessageBody img{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 0% 3% 0 5%;
+}
+
+.MessageBodyDetails{
+    padding: 0%;
+    margin: 0%;
+}
+
+.MessageBodyDetails h3{
+    padding: 0%;
+    margin: 0%;
+    text-shadow: 0 0 5px white;
+}
+
+.MessageBodyDetails p
+{
+    padding: 0%;
+    margin: 0%;
+    color: grey;
+}
+
+#NotificationNavLink.active{
+    height: 90%;
+    width: fit-content;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 10px;    
+    text-decoration: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: 6px rgb(248, 248, 248) solid;
+}
+.NoMessageLabel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}

@@ -16,6 +16,13 @@ import Sports from '../src/Componants/Sports'
 import News from '../src/Componants/News'
 import Entertaiment from '../src/Componants/Entertaiment'
 import Post from './Componants/Post';
+import Notification from './Pages/Notification';
+import AllNotifications from './Componants/AllNotifications';
+import VerifiedNotification from './Componants/VerifiedNotification';
+import MentionNotification from './Componants/MentionNotification';
+
+
+
 
 function App() {
   const navigate = useNavigate();
@@ -281,6 +288,8 @@ function App() {
           */}
 
           <Route path='/' element={ <Nav /> }>
+          <Route path='home' element={<Home />} />
+
           <Route path='explore' element={ <Explore /> } >
             <Route path='foryou' element={<Post />}/>
             <Route path='trendings' element={<Trendings />}/>
@@ -288,9 +297,13 @@ function App() {
             <Route path='sports' element={<Sports />}/>
             <Route path='entertainments' element={<Entertaiment />}/>
           </Route>
-            {/* <Route path='home' element={ <Home /> } />
+          <Route path='notification' element={ <Notification /> } >
+             <Route path='allnotification' element={<AllNotifications />}/>
+             <Route path='mentionnotification' element={<MentionNotification />}/>
+             <Route path='verifiednotification' element={<VerifiedNotification />}/>
+           </Route>
             <Route path='profile' element={<Profile />} />
-            <Route path='communities' element={<Communities />} /> */}
+            {/*   <Route path='communities' element={<Communities />} /> */}
           </Route>
           
       </Routes>
@@ -300,6 +313,5 @@ function App() {
 }
 
 export default App;
-
 
 

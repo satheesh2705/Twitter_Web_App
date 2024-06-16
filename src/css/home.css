@@ -225,8 +225,9 @@
 */
 
 .Profile{
-    background-color: black;
+    background-color: black;    
     color: white;
+    width: 45vw;
 }
 
 .ProfileHeader-top{
@@ -282,7 +283,7 @@
 .ProfileBox div {
     position: absolute;
     top: 37%;
-    left: 63%;   
+    left: 57%;   
     background-color: black;
     border-radius: 40px;
     height: 35px;
@@ -366,109 +367,6 @@
     font-weight: 300;
 }
 
-/* ========================================= */
-                /* EXPLORE PAGE */
-/* ========================================= */
-
-.Explore{
-    display: flex;
-    flex-direction: column;
-    width: 45vw;
-    border: 0.5px white solid;
-    background-color: #000000;
-    color: white;
-
-}
-
-.ExploreHeader{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 10%;
-    width: 100%;
-    border-bottom: 1px rgba(255, 255, 255, 0.596) solid;
-}
-
-.ExploreSearchBox{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 66%;
-    border: 0.5px solid rgba(255, 255, 255, 0.582);
-    padding: 10px 2.5%;
-    border-radius: 50px;
-}
-.ExploreSearchBox *{
-    font-size: 1rem;
-}
-.ExploreSearchBox input{
-    width: 80%;
-    border: none;
-    outline: none;
-    padding: 0% 0 0 2%;
-    color: white;
-    background-color:black;
-}
-.ExploreHeader span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70%;
-    width: 8%;
-}
-
-.ExploreHeader span:hover{
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.151);
-    transition: 1s;
-    border: 1px rgba(128, 128, 128, 0.098) solid;
-    font-weight: 900;
-    font-size: 1.2rem;
-
-}
-
-.ExploreNav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: 0.3px grey solid;  
-    color: gray;  
-}
-
-#ExploreNavLink{
-    text-decoration: none;
-    font-size: 1rem;
-    color: grey;
-}
-
-#ExploreNavLink:hover{
-    height: 100%;
-    width: fit-content;
-    background-color: rgba(128, 128, 128, 0.507);
-    color: white;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0% 10px;    
-    text-decoration: none;
-    border-radius: 3px
-}
-
-#ExploreNavLink.active{
-    height: 90%;
-    width: fit-content;
-    color: white;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0% 10px;    
-    text-decoration: none;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom: 6px rgb(3, 6, 180) solid;
-}
 /* ============================= */
         /* Recommends */
 /* ============================= */

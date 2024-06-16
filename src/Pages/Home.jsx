@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/home.css';
-import { IoSettingsSharp } from "react-icons/io5";
+import { IoSettingsSharp } from "react-icons/io5";  
 import Post from '../Componants/Post';
 
 // import {Post} from '../Componants/Post';

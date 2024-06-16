@@ -24,7 +24,7 @@ const Explore = () => {
           <NavLink id='ExploreNavLink' to='sports' > <p>Sports</p></NavLink> 
           <NavLink id='ExploreNavLink' to='entertainments' > <p>Entertainments</p></NavLink>
        </div>
-       <Outlet />
+       <Outlet /> 
     </div>
   )
 }
