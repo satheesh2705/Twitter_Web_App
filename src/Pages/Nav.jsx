@@ -51,11 +51,12 @@ const Nav = () => {
           <h2> Who to follow </h2>
             <Recommends />
             <Recommends />
+            {/*<Recommends />
             <Recommends />
             <Recommends />
             <Recommends />
             <Recommends />
-            <Recommends />
+            <Recommends /> */}
         </div>
         <div className='RecommendsBoxFooter'>
             <div>
