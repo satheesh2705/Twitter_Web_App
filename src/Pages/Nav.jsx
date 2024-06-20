@@ -23,7 +23,7 @@ const Nav = () => {
                 <NavLink className="link" to='home'>  <li>  <GoHome /> <p>Home</p></li> </NavLink>
                 <NavLink className="link" to='explore'>  <li> <IoSearch /> <p>Explore</p></li></NavLink>
                 <NavLink className="link" to='notification'> <li> <MdNotificationsNone /> <p>notification</p></li></NavLink>
-                <NavLink className="link"> <li> <CiMail /> <p>Message</p></li></NavLink>
+                <NavLink className="link" to='message'> <li> <CiMail /> <p>Message</p></li></NavLink>
                 <NavLink className="link" > <li> <CiViewList /> <p>List</p></li> </NavLink>
                 {/* <li> <FaRegBookmark /> <p>bookmarks</p> </li>  */}
                 <NavLink className="link">  <li> <AiOutlineUsergroupAdd /> <p>communities</p></li> </NavLink> 
@@ -50,12 +50,12 @@ const Nav = () => {
         <div className='RecomendedUser'>
           <h2> Who to follow </h2>
             <Recommends />
-            {/* <Recommends />
             <Recommends />
             <Recommends />
             <Recommends />
             <Recommends />
-            <Recommends /> */}
+            <Recommends />
+            <Recommends />
         </div>
         <div className='RecommendsBoxFooter'>
             <div>
