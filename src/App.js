@@ -21,7 +21,8 @@ import Entertaiment from '../src/Componants/Entertaiment'
 // import VerifiedNotification from './Componants/VerifiedNotification';
 // import MentionNotification from './Componants/MentionNotification';
 // import Message from './Pages/Message';
-import Communities from './Pages/Communities'
+import Premium from './Pages/Premium';
+import Communities from './Pages/Communities';
 import Animals from './Componants/ComunitiesPages/Animals'
 import Gaming from './Componants/ComunitiesPages/Gaming'
 import Art from './Componants/ComunitiesPages/Art'
@@ -327,7 +328,7 @@ function App() {
             <Route path='travel'     element={<Travel />}/>
             <Route path='xofficial'  element={<Xofficial />}/>
           </Route>  
-          
+          <Route path='premium'   element={<Premium />}/>
           {/* <Route path='explore' element={ <Explore /> } >
             <Route index element={<Post />}/>
             <Route path='foryou' element={<Post />}/>

@@ -27,7 +27,7 @@ const Nav = () => {
                 <NavLink className="link" > <li> <CiViewList /> <p>List</p></li> </NavLink>
                 <NavLink className="link" > <li> <FaRegBookmark /> <p>bookmarks</p> </li>  </NavLink>
                 <NavLink className="link" to='communities'>  <li> <AiOutlineUsergroupAdd /> <p>communities</p></li> </NavLink> 
-                <NavLink className="link">  <li> <TbPremiumRights /> <p>premium</p></li></NavLink>
+                <NavLink className="link" to='premium'>  <li> <TbPremiumRights /> <p>premium</p></li></NavLink>
                 <NavLink className="link" to='profile'> <li> <CgProfile /> <p>profile</p></li> </NavLink>
                 <NavLink className="link"> <li> <CiCircleMore /> <p>more</p></li>  </NavLink>                       
             </ul>               
