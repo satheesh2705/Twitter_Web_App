@@ -1,7 +1,7 @@
 import React from 'react'  
 import Post from '../Post';
 
-const Food = () => {
+const Travel = () => {
   return (
     <div>
       <Post />
@@ -9,4 +9,4 @@ const Food = () => {
   )
 }
 
-export default Food
+export default Travel

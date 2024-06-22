@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react'  
+import Post from '../Post';
 
 const Technology = () => {
   return (
     <div>
-      Technology
+      <Post />
     </div>
   )
 }

@@ -15,16 +15,17 @@ const Communities = () => {
           <IoSearch />
       </div>
       <div className='CommunitiesNavList'>
-        <NavLink className=''>  <p>Sports</p>      </NavLink>
-        <NavLink>  <p>Tech</p>        </NavLink>
-        <NavLink>  <p>EnterTainment</p> </NavLink>
-        <NavLink>  <p>Art</p>         </NavLink>
-        <NavLink>  <p>News</p>        </NavLink>
-        <NavLink>  <p>Games</p>       </NavLink>
-        <NavLink>  <p>Animal </p>     </NavLink>        
-        <NavLink>  <p>Food</p>        </NavLink> 
-        <NavLink>  <p>X-official</p>  </NavLink> 
-        <NavLink>  <p>politics</p>    </NavLink>  
+        <NavLink to='tech' className='CommunitiesNavBar' >  <p>Tech</p>        </NavLink>
+        <NavLink to='art' className='CommunitiesNavBar' >  <p>Art</p>         </NavLink>
+        <NavLink to='games' className='CommunitiesNavBar' >  <p>Games</p>       </NavLink>
+        <NavLink to='animals' className='CommunitiesNavBar' >  <p>Animal </p>     </NavLink>        
+        <NavLink to='food' className='CommunitiesNavBar' >  <p>Food</p>        </NavLink> 
+        <NavLink to='politics' className='CommunitiesNavBar' >  <p>politics</p>    </NavLink>
+        <NavLink to='travel' className='CommunitiesNavBar' >  <p>travel</p>    </NavLink> 
+        <NavLink to='xofficial' className='CommunitiesNavBar' >  <p>Xofficial</p>   </NavLink>  
+      </div>
+      <div>
+        <Outlet />
       </div>
     </div>
   )

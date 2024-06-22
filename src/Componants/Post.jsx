@@ -1,6 +1,6 @@
 import React from 'react'
 import vijay from '../Assets/vijay.jpeg';
-import dhanush from '../Assets/dhanush.jpeg';
+// import dhanush from '../Assets/dhanush.jpeg';
 import { FiMoreHorizontal } from "react-icons/fi";
 import { BiLike } from "react-icons/bi";
 import { BiDislike } from "react-icons/bi";
@@ -33,7 +33,7 @@ const Post = () => {
       </div>
 
     <div className="PostBody">
-      <img src={dhanush} alt="body" />
+      <img src={vijay} alt="body" />
     </div>
 
     <div className="PostFooter">

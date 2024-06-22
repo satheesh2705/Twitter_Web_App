@@ -42,9 +42,57 @@
     transition: 1s;
 }
 
+/*  ================================================================================  */
+/*                                       Communities                                  */
+/*  ================================================================================  */
+
 .CommunitiesNavList{
     display: flex;
     flex-direction: row;
     width: 100%;
     overflow-x: scroll;
 }
+
+.CommunitiesNavBar{
+    text-decoration: none;
+    color: white;
+    border: 1px white solid;
+    height: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    margin: 2%;
+    padding: 1% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.CommunitiesNavBar.active{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.CommunitiesNavBar:hover{
+    background-color: rgba(128, 128, 128, 0.301);
+    font-weight: 800;
+} 
+
+.CommunitiesNavList::-webkit-scrollbar {
+    height: 2px;
+  }
+
+/* .CommunitiesNavList::-webkit-scrollbar-thumb { 
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+} */
+  
+.CommunitiesNavList::-webkit-scrollbar-thumb:hover {
+    background-color: #116cd4;
+}
+  
+.CommunitiesNavList::-webkit-scrollbar-thumb:active {
+    background-color: #85e762;
+}
+  

@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react'  
+import Post from '../Post';
 
 const Art = () => {
   return (
     <div>
-      Art
+      <Post />
     </div>
   )
 }

@@ -12,9 +12,9 @@ import Home from './Pages/Home';
 // import NewPassword from './Authentication/NewPassword';
 // import Explore from './Pages/Explore';
 // import Trendings from '../src/Componants/Trendings'
-// import Sports from '../src/Componants/Sports'
-// import News from '../src/Componants/News'
-// import Entertaiment from '../src/Componants/Entertaiment'
+import Sports from '../src/Componants/Sports'
+import News from '../src/Componants/News'
+import Entertaiment from '../src/Componants/Entertaiment'
 // import Post from './Componants/Post';
 // import Notification from './Pages/Notification';
 // import AllNotifications from './Componants/AllNotifications';
@@ -22,6 +22,14 @@ import Home from './Pages/Home';
 // import MentionNotification from './Componants/MentionNotification';
 // import Message from './Pages/Message';
 import Communities from './Pages/Communities'
+import Animals from './Componants/ComunitiesPages/Animals'
+import Gaming from './Componants/ComunitiesPages/Gaming'
+import Art from './Componants/ComunitiesPages/Art'
+import Food from './Componants/ComunitiesPages/Food'
+import Travel from './Componants/ComunitiesPages/Travel'
+import Politics from './Componants/ComunitiesPages/Politics'
+import Tech from './Componants/ComunitiesPages/Technology'
+import Xofficial from './Componants/ComunitiesPages/Xofficial'
 
 
 
@@ -309,8 +317,17 @@ function App() {
           {/* <Route index element={<Home />} />
           <Route path='home' element={<Home />} /> */}
           {/* <Route path='message' element={<Message />} />  */}
-          <Route index element={<Communities/>} />  
-          {/* path='communities' */}
+          <Route  path='communities'   element={<Communities/>} >
+            <Route path='animals'   element={<Animals />}/>
+            <Route path='art'      element={<Art />}/>
+            <Route path='food'     element={<Food />}/>
+            <Route path='politics' element={<Politics />}/>
+            <Route path='tech' element={<Tech />}/>
+            <Route path='games'     element={<Gaming />}/>
+            <Route path='travel'     element={<Travel />}/>
+            <Route path='xofficial'  element={<Xofficial />}/>
+          </Route>  
+          
           {/* <Route path='explore' element={ <Explore /> } >
             <Route index element={<Post />}/>
             <Route path='foryou' element={<Post />}/>

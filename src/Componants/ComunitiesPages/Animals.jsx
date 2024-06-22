@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react'  
+import Post from '../Post';
 
 const Animals = () => {
   return (
     <div>
-      Animals
+      <Post />
     </div>
   )
 }
