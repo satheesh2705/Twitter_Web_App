@@ -1,0 +1,50 @@
+.Communities{
+    width: 45.84vw;
+    background-color: black;
+    color: white;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}
+
+.CommunitiesHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px white solid;
+    padding: 0 5%;
+    font-size: 1.3rem;
+}
+
+.CommunitiesHeader div{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#BackButton{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#BackButton:hover{
+    background-color: grey;
+    transition: 1s;
+}
+
+.CommunitiesNavList{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+}

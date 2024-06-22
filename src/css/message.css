@@ -1,0 +1,138 @@
+.Message{
+    width: 45.85vw;
+    height: 99.80vh;
+    background-color: black;
+    color: white;
+    border-left: 0.5px white solid;
+    border-right: 0.5px white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.CreateGroupBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.CreateGroupBox *{
+    margin: 0%;
+    padding: 0%;
+}
+
+.CreateGroupBox h1{
+    margin: 0% 0% 5px 0%;
+    padding: 0%;
+    font-size: 3.0rem;
+    font-weight: 700;
+    text-align: center; 
+}
+
+.CreateGroupBox p{
+    width: 350px;
+    color: grey;
+    margin: 1.5% 0%;
+}
+
+.CreateGroup{
+    margin: 15px 0%;
+    height: 45px;
+    width: 195px;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(27, 105, 206, 0.991);
+}
+
+.CreateGroup:hover{
+    box-shadow: 2.5px 2.5px 5px grey;
+}
+
+.CreateGroup button{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgba(27, 105, 206, 0.991);
+    color: aliceblue;
+}
+
+#CreateGroupIcon{
+    color: aliceblue;
+    font-size: 1.45rem;
+    font-weight: 900;
+    background-color: rgba(27, 105, 206, 0.991);
+    height: 67%;
+    width: 19%;
+}
+
+#CreateGroupIcon:hover{
+    background-color: rgba(134, 134, 170, 0.251);
+    border-radius: 45%;
+    color: rgba(0, 0, 0, 0.548);
+    transition: 1.0s;
+}
+/* ================================================== */
+/*  */
+/* ================================================== */
+
+.CreateGroupContainer{
+    position: absolute;
+    top: 10%;
+    border: 1px white solid;
+    border-radius: 4%;
+    width: 40%;
+    height: 75%;
+    background-color: rgba(61, 15, 15, 0.274);
+}
+
+.CreateGroupForm{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px wheat solid;
+}
+
+.CreateGroupForm div{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0 2% 0 ;
+}
+
+.CreateGroupForm div input{
+    height: 40px;
+    width: 250px;
+    margin: 3%;
+    padding: 0% 2%;
+    font-size: 1.2rem;
+    background-color: rgba(29, 22, 22, 0);
+    color: white;
+    border: none;
+    border-bottom: 2px white solid;
+    outline: none;
+}
+.CreateGroupForm button{
+    height: 100px;
+    width: 100px;
+    margin: 6%  3% 0 3%;
+    font-size: 2rem;
+    background-color: rgb(28, 102, 185);
+    border: none;
+    outline: none;
+    font-weight: 850;
+    color: white;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+
+.CreateGroupForm button:hover{
+    color: rgb(179, 174, 174);
+    transition: 1s;
+}

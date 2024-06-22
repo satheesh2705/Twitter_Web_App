@@ -5,7 +5,7 @@ import { IoSearch } from "react-icons/io5";
 import { MdNotificationsNone } from "react-icons/md";
 import { CiMail } from "react-icons/ci";
 import { CiViewList } from "react-icons/ci";
-// import { FaRegBookmark } from "react-icons/fa";
+import { FaRegBookmark } from "react-icons/fa";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { TbPremiumRights } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
@@ -25,8 +25,8 @@ const Nav = () => {
                 <NavLink className="link" to='notification'> <li> <MdNotificationsNone /> <p>notification</p></li></NavLink>
                 <NavLink className="link" to='message'> <li> <CiMail /> <p>Message</p></li></NavLink>
                 <NavLink className="link" > <li> <CiViewList /> <p>List</p></li> </NavLink>
-                {/* <li> <FaRegBookmark /> <p>bookmarks</p> </li>  */}
-                <NavLink className="link">  <li> <AiOutlineUsergroupAdd /> <p>communities</p></li> </NavLink> 
+                <NavLink className="link" > <li> <FaRegBookmark /> <p>bookmarks</p> </li>  </NavLink>
+                <NavLink className="link" to='communities'>  <li> <AiOutlineUsergroupAdd /> <p>communities</p></li> </NavLink> 
                 <NavLink className="link">  <li> <TbPremiumRights /> <p>premium</p></li></NavLink>
                 <NavLink className="link" to='profile'> <li> <CgProfile /> <p>profile</p></li> </NavLink>
                 <NavLink className="link"> <li> <CiCircleMore /> <p>more</p></li>  </NavLink>                       
@@ -37,7 +37,7 @@ const Nav = () => {
         </div>
 
         <div className='Nav-Foot'>
-            <img src={ajith} alt="hello" />
+            <img src={ajith} alt="profile" />
             <div>
                 <h3>SATHEESH S</h3>
                 <p>@mrsatheesh2705</p>
@@ -45,7 +45,12 @@ const Nav = () => {
             <p>...</p>
         </div>
     </nav>
-     <Outlet />   
+    
+    {/*  ================================= */}
+
+     <Outlet /> 
+
+       {/*=========================  */}
       <div className='RecommendsBox'>
         <div className='RecomendedUser'>
           <h2> Who to follow </h2>

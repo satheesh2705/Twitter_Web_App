@@ -20,7 +20,8 @@ import Home from './Pages/Home';
 // import AllNotifications from './Componants/AllNotifications';
 // import VerifiedNotification from './Componants/VerifiedNotification';
 // import MentionNotification from './Componants/MentionNotification';
-import Message from './Pages/Message';
+// import Message from './Pages/Message';
+import Communities from './Pages/Communities'
 
 
 
@@ -305,10 +306,11 @@ function App() {
 
           
           <Route path='/' element={ <Nav /> }>
-          <Route index element={<Home />} />
-          <Route path='home' element={<Home />} />
-          <Route path='message' element={<Message />} />
-
+          {/* <Route index element={<Home />} />
+          <Route path='home' element={<Home />} /> */}
+          {/* <Route path='message' element={<Message />} />  */}
+          <Route index element={<Communities/>} />  
+          {/* path='communities' */}
           {/* <Route path='explore' element={ <Explore /> } >
             <Route index element={<Post />}/>
             <Route path='foryou' element={<Post />}/>
