@@ -22,15 +22,15 @@ import Entertaiment from '../src/Componants/Entertaiment'
 // import MentionNotification from './Componants/MentionNotification';
 // import Message from './Pages/Message';
 import Premium from './Pages/Premium';
-import Communities from './Pages/Communities';
-import Animals from './Componants/ComunitiesPages/Animals'
-import Gaming from './Componants/ComunitiesPages/Gaming'
-import Art from './Componants/ComunitiesPages/Art'
-import Food from './Componants/ComunitiesPages/Food'
-import Travel from './Componants/ComunitiesPages/Travel'
-import Politics from './Componants/ComunitiesPages/Politics'
-import Tech from './Componants/ComunitiesPages/Technology'
-import Xofficial from './Componants/ComunitiesPages/Xofficial'
+// import Communities from './Pages/Communities';
+// import Animals from './Componants/ComunitiesPages/Animals'
+// import Gaming from './Componants/ComunitiesPages/Gaming'
+// import Art from './Componants/ComunitiesPages/Art'
+// import Food from './Componants/ComunitiesPages/Food'
+// import Travel from './Componants/ComunitiesPages/Travel'
+// import Politics from './Componants/ComunitiesPages/Politics'
+// import Tech from './Componants/ComunitiesPages/Technology'
+// import Xofficial from './Componants/ComunitiesPages/Xofficial'
 
 
 
@@ -66,8 +66,7 @@ function App() {
     // let Numbers = 0;
 
   // const analysisUserValue = (Value) => {
-  //   console.log("method");
-
+ 
   //    Upper   = 0;
   //    Lower   = 0;
   //    Special = 0;
@@ -318,7 +317,7 @@ function App() {
           {/* <Route index element={<Home />} />
           <Route path='home' element={<Home />} /> */}
           {/* <Route path='message' element={<Message />} />  */}
-          <Route  path='communities'   element={<Communities/>} >
+          {/* <Route  path='communities'   element={<Communities/>} >
             <Route path='animals'   element={<Animals />}/>
             <Route path='art'      element={<Art />}/>
             <Route path='food'     element={<Food />}/>
@@ -327,8 +326,8 @@ function App() {
             <Route path='games'     element={<Gaming />}/>
             <Route path='travel'     element={<Travel />}/>
             <Route path='xofficial'  element={<Xofficial />}/>
-          </Route>  
-          <Route path='premium'   element={<Premium />}/>
+          </Route>   */}
+          <Route index element={<Premium />}/>
           {/* <Route path='explore' element={ <Explore /> } >
             <Route index element={<Post />}/>
             <Route path='foryou' element={<Post />}/>
