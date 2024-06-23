@@ -312,7 +312,7 @@ function App() {
            }/>  */}
         
 
-          
+          <Route path='premium' element={<Premium />}/>
           <Route path='/' element={ <Nav /> }>
           {/* <Route index element={<Home />} />
           <Route path='home' element={<Home />} /> */}
@@ -327,7 +327,7 @@ function App() {
             <Route path='travel'     element={<Travel />}/>
             <Route path='xofficial'  element={<Xofficial />}/>
           </Route>   */}
-          <Route index element={<Premium />}/>
+          
           {/* <Route path='explore' element={ <Explore /> } >
             <Route index element={<Post />}/>
             <Route path='foryou' element={<Post />}/>
