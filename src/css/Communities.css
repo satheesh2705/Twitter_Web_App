@@ -43,7 +43,7 @@
 }
 
 /*  ================================================================================  */
-/*                                       Communities                                  */
+/*                                       Communitieslist                                  */
 /*  ================================================================================  */
 
 .CommunitiesNavList{
@@ -96,3 +96,80 @@
     background-color: #85e762;
 }
   
+
+/* ================================================================================= */
+/*  ================================================================================  */
+/*                                     Bookmarks.jsx                                  */
+/*  ================================================================================  */
+/* ================================================================================= */
+
+.BookMarks{
+    width: 45.85vw;
+    background-color: black;
+    border-left: 1px white solid ;
+    border-right: 1px white solid ;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.BookMarksHeader{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0 2% 4%;
+    border-bottom: 0.21px white solid;
+}
+
+.BookMarksHeader h3{
+    padding: 0%;
+    margin: 0%;
+    font-size: 1.52rem;
+}
+
+.BookMarksHeader p{
+    padding: 0%;
+    margin: 0%;
+    font-weight:280;
+}
+
+#UserId{
+    text-decoration: none;
+    color: white;
+}
+
+.BookMarksHeader p:hover{
+    text-decoration: underline;
+}
+
+.BooKMarkBody{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================== */
+
+
+
+.NoPostMassage{
+    display: flex;
+    flex-direction: column;
+}
+
+.NoPostMassage h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    /* margin: 0%;
+    padding: 0%; */
+    display: inline;
+}   
+
+
+.NoPostMassage p{
+    font-size: 1em;
+    text-transform: capitalize;
+    margin: 0%;
+    padding: 0%;
+}   

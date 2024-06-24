@@ -1,0 +1,34 @@
+
+===========================================
+    Nav.jsx                               =                     App.css                        
+===========================================
+============================================
+    Home.jsx                              =
+    Post.jsx                              = 
+    Recomands.jsx                         =                   home.css 
+    Profile.jsx                           =
+===========================================
+
+===========================================
+    Explore.jsx                           =            
+        Entertainment.jsx                 =
+        News.jsx                          =
+        Sports.jsx                        =
+        Trending.jsx                      =                   explore.css 
+    Notification.jsx                      =
+        allNotification.jsx               = 
+        mentionedNotification.jsx         =
+        verifiedNotification.jsx          =
+                                          =
+===========================================
+
+css =css =css =css =
+===========================================
+    Communities.jsx                       =  
+    BookMarks.css                         =                   Communities.css
+===========================================
+
+
+===========================================
+        message.jsx                       =                     message.css                           
+===========================================

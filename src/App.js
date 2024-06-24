@@ -22,7 +22,7 @@ import Nav from './Pages/Nav';
 // import VerifiedNotification from './Componants/VerifiedNotification';
 // import MentionNotification from './Componants/MentionNotification';
 // import Message from './Pages/Message';
-import Premium from './Pages/Premium';
+// import Premium from './Pages/Premium';
 // import Communities from './Pages/Communities';
 // import Animals from './Componants/ComunitiesPages/Animals'
 // import Gaming from './Componants/ComunitiesPages/Gaming'
@@ -32,6 +32,7 @@ import Premium from './Pages/Premium';
 // import Politics from './Componants/ComunitiesPages/Politics'
 // import Tech from './Componants/ComunitiesPages/Technology'
 // import Xofficial from './Componants/ComunitiesPages/Xofficial'
+import BookMarks from './Pages/BookMarks';
 
 
 
@@ -313,10 +314,9 @@ function App() {
            }/>  */}
     
   
-    <Route path='premium' element={<Premium />}/> 
+    {/* <Route path='premium' element={<Premium />}/>  */}
           <Route path='/' element={ <Nav /> }>
-         
-
+         <Route path='bookmarks' element={ <BookMarks /> } />
           {/* <Route index element={<Home />} />
           <Route path='home' element={<Home />} /> */}
           {/* <Route path='message' element={<Message />} />  */}

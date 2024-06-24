@@ -5,7 +5,6 @@ import BasicPrize from '../Componants/PremiumPrizeList/BasicPrize';
 import PremiumPrize from '../Componants/PremiumPrizeList/PremiumPrize';
 import PremiumPlusPrize from '../Componants/PremiumPrizeList/PremiumPlusPrize';
 
-
 const Premium = () => {
   return (
     <div className='Premium'>
