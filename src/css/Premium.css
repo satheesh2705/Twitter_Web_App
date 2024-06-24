@@ -78,7 +78,10 @@
 /* ======================================================= */
 
 .PrizeTable{
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 2% 0;
 }
 
@@ -86,8 +89,79 @@
 .PremiumPlusPrize,
 .PremiumPrize
 {
-    height: 320px;
-    width: 220px;
-    border: 1px white solid;
-    margin: 0% 2%;
+   height: 330px;
+   width: 250px;
+   border: 1px white solid;
+   margin: 0% 2%;
+}
+
+.PrizeBox{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0% 5%;
+}
+
+.PrizeBox  div:nth-child(2){
+    display:flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.PrizeBox  div:nth-child(2) h1{
+    padding:0 5% 0 0 ;
+    font-size: 3rem;
+}
+
+.PrizeBox div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.PrizeBox div:nth-child(3) button{
+    width: 240px;
+    height: 35px;
+    border: none;
+    border-radius: 40px;
+}
+
+.PremiumFeatures{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    margin: 2% 0;
+    overflow-y: hidden;
+}
+.PremiumFeatures ul{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0%;
+    padding: 0% 5%;
+}
+
+.PremiumFeatures ul li p{
+    margin: 0%;
+    padding: 1% 5%;
+    color: rgb(203, 193, 193);
+    font-size: 0.9rem;
+
+}
+.PremiumFeatures ul li span{
+    margin: 0%;
+    padding: 0%;
+}
+.PremiumFeatures ul li{
+    padding: 0%;
+    margin: 0% 0%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
 }
