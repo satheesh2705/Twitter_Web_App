@@ -1,8 +1,9 @@
 import './App.css';
 // import { useState } from 'react';
-import { Routes, Route, useNavigate} from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Nav from './Pages/Nav';
-import Home from './Pages/Home';
+// import { useNavigate} from "react-router-dom";
+// import Home from './Pages/Home';
 // import Communities from '../src/Pages/Communities';
 // import Profile from '../src/Pages/Profile';
 // import Login from '../src/Authentication/Login';
@@ -12,9 +13,9 @@ import Home from './Pages/Home';
 // import NewPassword from './Authentication/NewPassword';
 // import Explore from './Pages/Explore';
 // import Trendings from '../src/Componants/Trendings'
-import Sports from '../src/Componants/Sports'
-import News from '../src/Componants/News'
-import Entertaiment from '../src/Componants/Entertaiment'
+// import Sports from '../src/Componants/Sports'
+// import News from '../src/Componants/News'
+// import Entertaiment from '../src/Componants/Entertaiment'
 // import Post from './Componants/Post';
 // import Notification from './Pages/Notification';
 // import AllNotifications from './Componants/AllNotifications';
@@ -310,10 +311,12 @@ function App() {
               handleNewPassWord={handleNewPassWord}
             />
            }/>  */}
-        
-
-          <Route path='premium' element={<Premium />}/>
+    
+  
+    <Route path='premium' element={<Premium />}/> 
           <Route path='/' element={ <Nav /> }>
+         
+
           {/* <Route index element={<Home />} />
           <Route path='home' element={<Home />} /> */}
           {/* <Route path='message' element={<Message />} />  */}

@@ -1,33 +1,33 @@
 import React from 'react'
-import './summa.css';
+
 
 const BasicPrize = () => {
   return (
     <div className='BasicPrize' >
        <div className='PrizeBox'>
-       <p>Basic</p>
+       <h1>Basic</h1>
        <div className='PremiumAmount'>
-          <h1>243.35</h1>
+          <h1>$243.35</h1>
           <p>/ month</p>
        </div>
        <div className='PremiumButton'>
           <button>Subscribe</button>
        </div>
        <div className='PremiumFeatures'>
-         <ul>
-            <li> <span>&#10003;</span> <p> Small reply boost </p> </li>
-            <li> <span>&#10003;</span> <p> Encrypted direct messages </p> </li>
-            <li> <span>&#10003;</span>  <p> Bookmark folders </p></li>
-            <li> <span>&#10003;</span> <p> Highlights tab </p> </li>
-            <li> <span>&#10003;</span> <p> Edit post </p> </li>
-            <li> <span>&#10003;</span> <p> Post longer videos </p></li>
-            <li>  <span>&#10003;</span> <p> Longer posts </p></li>
+         
+           <p> <span>&#10003;</span> Small reply boost </p> 
+           <p> <span>&#10003;</span>  Encrypted direct messages </p> 
+           <p> <span>&#10003;</span> Bookmark folders </p>
+           <p> <span>&#10003;</span> Hihts tab </p> 
+           <p> <span>&#10003;</span>  Edit post </p> 
+           <p> <span>&#10003;</span>  Post longer videos </p>
+           <p> <span>&#10003;</span>  Longer posts </p>
              
           
            
           
           
-         </ul>
+        
        </div>
        </div>
     </div>

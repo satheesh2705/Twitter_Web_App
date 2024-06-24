@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link,NavLink,Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../css/Premium.css';
 import BasicPrize from '../Componants/PremiumPrizeList/BasicPrize';
 import PremiumPrize from '../Componants/PremiumPrizeList/PremiumPrize';
@@ -9,7 +9,9 @@ import PremiumPlusPrize from '../Componants/PremiumPrizeList/PremiumPlusPrize';
 const Premium = () => {
   return (
     <div className='Premium'>
-          
+          <div className='ClosePremiumPage'>
+            <Link to='/' id='back'> <p>X</p> </Link>
+          </div>
         <div className='PremiumHeader'>
             <h1>Upgrade to premium</h1>
             <p>enjoy an enhanced experiance, exclusive creater tools, top-tier verification & security</p>

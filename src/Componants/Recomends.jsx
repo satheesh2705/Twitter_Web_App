@@ -1,5 +1,6 @@
 import React from 'react'
 import  ajith from '../Assets/ajith.jpeg'
+import '../css/home.css';
 
 const Recomends = () => {
   return (
